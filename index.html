@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo Html </title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="col-11">
+
+    <table width="500" border="4" height="500" callpandding="10" cellspacing="1" align="center" bordercolor="black" >
+
+        <tbody>
+
+            <tr>
+                <td class="col-5"> <img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"> </td>
+            </tr>
+            <tr>
+                <td class="col-5"> <img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"> </td>
+            </tr>
+
+            <tr>
+                <td class="col-5"> <img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"> </td>
+                <td class="col-5">  <img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"> </td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+    <table border="0" align="center" width="500">
+        <br/> <br/>
+    <tr> <td>
+
+
+    <fieldset class="col-8">
+        <legend align="center" ><strong> JOGO DA VELHA # </strong></legend>
+        <form action="enviar.php" methon="post" name="Jogo da VELHA">
+
+
+            <table border="0" cellspadding="4" >
+
+                <tr align="left">
+                    <td><label><strong> Jogar contra o Computador? </strong> </label></td>
+                </tr>
+
+                <tr align="left">
+                    
+                    <td><label><input type="radio" id="pc" name="pc" value="S" required />SIM </label>
+                     <label><input type="radio" id="pc" name="pc" value="N" required /> NÃO </label>
+                   
+                    </tr>
+                    
+    </fieldset>
+    </tr>
+    </table>
+    <br/>
+
+
+    <a onclick="Refresh()"><input type="reset" name="reset" id="reset"/></a>
+
+
+</body>
+
+<script type="text/javascript" src="externo.js"></script>
+</html>
